@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hillel</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Users from API</h1>
+    <div id="container">
+      <div class="header">
+        <div class="header-item">ID</div>
+        <div class="header-item">Name</div>
+        <div class="header-item">Username</div>
+        <div class="header-item">Email</div>
+        <div class="header-item">
+          <select id="sortType">
+            <option value="low">Ascending</option>
+            <option value="hight">Descending</option>
+          </select>
+          <button id="sortBtn">Sort</button>
+        </div>
+      </div>
+      <div id="searchContainer">
+        <input type="text" id="searchInput" placeholder="Search by username" />
+        <button id="searchBtn">Search</button>
+      </div>
+      <div id="usersData"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
